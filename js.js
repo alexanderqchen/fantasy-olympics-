@@ -13,8 +13,9 @@ var predictions = [
 
 document.addEventListener('DOMContentLoaded', function(){
       Typed.new('.element', {
-        strings: ["Welcome to the 2024 Olympics."],
-        typeSpeed: 0
+        strings: ["Welcome to the 2024 Olympics. ^1300", "Brought to you from Los Angeles, CA. ^2000"],
+        typeSpeed: 0, 
+        loop: true
       });
   });
 

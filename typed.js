@@ -130,7 +130,7 @@
 		build: function() {
 			var self = this;
 			// Insert cursor
-			if (this.showCursor === true) {
+			if (this.showCursor === false) {
 				this.cursor = document.createElement('span');
 				this.cursor.className = 'typed-cursor';
 				this.cursor.innerHTML = this.cursorChar;
