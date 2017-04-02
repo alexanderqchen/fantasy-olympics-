@@ -4,7 +4,19 @@ h1 {
 html, body {
     background: linear-gradient(black, white); /* Standard syntax */
 	margin: 0;
+	padding:0;
 	height: 100%;
+}
+
+
+
+video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 100%;
+	min-height:100%;
 }
 #logo {
 	height:50%;
@@ -30,3 +42,4 @@ th td {
 .post { 
   width: 500px; 
 }
+
