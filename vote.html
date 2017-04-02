@@ -56,6 +56,9 @@
 				$("#piewhenhover").hide();
 				$("#pie").show();
 			});*/
+				$("#submitButton").click(function(){
+					$(this).attr("disabled", "disabled");
+				});
 		});
 	</script>
 </head>
@@ -97,7 +100,7 @@
 				<option>India</option>
 			  </select>
 			  <label for = "sel1" style = "color:white">Who will win gold in this event?</label>
-			  <select class = "form-control" id = "sel1">
+			  <select class = "form-control" id = "sel2">
 				<option>USA</option>
 				<option>Canada</option>
 				<option>China</option>
@@ -340,15 +343,16 @@ function dashboard(id, fData){
 }
 </script>
 
-<script>
-	var freqData=[
+<script src = "getData.js">
+	
+	/*var freqData=[
 	{Country:'USA',freq:{USA:4786, Russia:1319, China:249, India:100}}
 	,{Country:'Russia',freq:{USA:932, Russia:2149, China:418, India:100}}
 	,{Country:'China',freq:{USA:1101, Russia:412, China:674, India:100}}
 	,{Country:'India',freq:{USA:797, Russia:1849, China:1534, India:100}}
 	];
 
-	dashboard('#dashboard',freqData);
+	dashboard('#dashboard',freqData);*/
 </script>
 
 </body>
