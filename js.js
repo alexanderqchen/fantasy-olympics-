@@ -13,7 +13,7 @@ var predictions = [
 
 document.addEventListener('DOMContentLoaded', function(){
       Typed.new('.element', {
-        strings: ["Welcome to the 2024 Olympics. ^1300", "Brought to you from Los Angeles, CA. ^2000"],
+        strings: ["Welcome to the 2024 Olympics. ^1100", "Brought to you from Los Angeles, USA. ^2000"],
         typeSpeed: 0, 
         loop: true
       });
