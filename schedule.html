@@ -4,16 +4,37 @@
 	<title>Event Schedule</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="Styles.css">
-	<script src="js/jquery.js"></script>
+	<script src="js.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	<script>
-		$(function() {
-			$("page-wrap").wrapInner("<table cellspacing='30'<tr>");
-			$(".post").wrap("<td>");
-		}
+		//when more events are added, make sure to include them here
+		$(document).ready(function(){
+			var a;
+			$("#event1").hide();
+			$("#event2").hide();
+
+		
+			$("#test").click(function(){
+				$("#event1").hide();
+				$("#event2").hide();
+				a = $("#sel1").val();
+				if(a=="Gymnastics")
+					$("#event1").show();
+				else if(a=="Tennis")
+					$("#event2").show();
+			});
+
+			
+		});
 	</script>
 </head>
 
 <body>
+
+	<video autoplay="true" loop controls muted>
+		<source src="Olympics.mp4" type="video/mp4">
+	</video>
+
 
 	<nav class = "navbar navbar-inverse">
 		<div class="container-fluid">
@@ -31,10 +52,54 @@
 		</div>
 	</nav>
 	
-	<div class = "row" style = "padding-top:30px">
-		<center>
-		<div class = "col-md-6">
-			<h1 style = "color:white; padding-bottom:10px">Tuesday: July 2, 2024</h1>
+	
+	<center>
+		<div class = "row">
+			<div class = "col-md-12">
+				<h1 style = "color:white">Schedule</h1>
+			</div>
+		</div>
+	</center>
+	
+	<div class = "row">
+		<div class = "col-md-2">
+		
+		</div>
+		<div class = "col-md-3">
+			<div class="form-group">
+			  <label for="sel1" style = "color:white">Choose a sport:</label>
+			  <select class="form-control" id="sel1">
+				<option id = "gymnsatics">Gymnastics</option>
+				<option id = "tennis">Tennis</option>
+				<option id = "fencing">Fencing</option>
+				<option id = "basketball">Basketball</option>
+				<option id = "boxing">Boxing</option>
+				<option id = "baseball">Baseball</option>
+				<option id = "judo">Judo</option>
+				<option id = "volleyball">Volleyball</option>
+				<option id = "archery">Archery</option>
+				<option id = "golf">Golf</option>
+				<option id = "badminton">Badminton</option>
+				<option id = "taekwondo">Taekwondo</option>
+				<option id = "tabletennis">Table Tennis</option>
+				<option id = "rowing">Rowing</option>
+				<option id = "weightlifting">Weigtlifting</option>
+				<option id = "trackandfield">Track and Field</option>
+			  </select>
+			  <input class = "btn" type = "submit" id = "test">
+			</div>
+		</div>
+		<div class = "col-md-7">
+		</div>
+	</div>
+	
+	
+	<!--so these are 2 sample events, make more for all the options-->
+	
+	<center>
+	<div class = "row" style = "padding-top:30px" id = "event1">
+		<div class = "col-md-12">
+			<h1 style = "color:white; padding-bottom:10px">Tuesday: August 15, 2024</h1>
 			<a href="vote.html"><h4>Rowing</h4></a>
 			<a href="#"><h4>Track and Field</h4></a>
 			<a href="#"><h4>Swimming</h4></a>
@@ -42,16 +107,18 @@
 			<a href="#"><h4>Boxing</h4></a>
 			<a href="#"><p style = "color: white"><u>see more...</u></p></a>
 		</div>
-		<div class = "col-md-6">
-			<h1 style = "color:white; padding-bottom:10px">Wednesday: July 3, 2024</h1>
+	</div>
+	<div class = "row" style = "padding-top:30px" id = "event2">
+		<div class = "col-md-12">
+			<h1 style = "color:white; padding-bottom:10px">Wednesday: August 16, 2024</h1>
 			<a href="#"><h4>Swimming</h4></a>
 			<a href="#"><h4>Judo</h4></a>
 			<a href="#"><h4>Table Tennis</h4></a>
 			<a href="#"><h4>Basketball</h4></a>
 			<a href="#"><p style = "color: white"><u>see more...</u></p></a>
 		</div>
-		</center>
 	</div>
+	<center>
 </body>
 
 
