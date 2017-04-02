@@ -1,0 +1,21 @@
+{
+    "author": "dinkarkhattar@gmail.com",
+    "dependencies": {},
+    "keywords": [],
+    "name": "fantasy",
+    "pebble": {
+        "displayName": "fantasy",
+        "enableMultiJS": true,
+        "messageKeys": [],
+        "projectType": "native",
+        "resources": {
+            "media": []
+        },
+        "sdkVersion": "3",
+        "uuid": "3b737fc0-16cc-414e-8a08-e1ae5b8ee367",
+        "watchapp": {
+            "watchface": false
+        }
+    },
+    "version": "1.0.0"
+}
