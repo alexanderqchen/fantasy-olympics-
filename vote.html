@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="Styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Bevan" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	<meta charset="utf-8">
 	<style>
 		path {  stroke: #fff; }
@@ -45,6 +46,16 @@
 			$("#submitButton").click(function(){
 				$("#dashboard").fadeIn("slow");
 			});
+			$("#barwhenhover").hide();
+			$("#piewhenhover").hide();
+			/*$("#bar").mouseover(function(){
+				$("#pie").hide();
+				$("#piewhenhover").show();
+			});
+			$("#bar").mouseout(function(){
+				$("#piewhenhover").hide();
+				$("#pie").show();
+			});*/
 		});
 	</script>
 </head>
@@ -56,7 +67,7 @@
 	<nav class = "navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="LA Hacks.html">Los Angeles 2024</a>
+				<a class="navbar-brand" href="LA Hacks.html"><img src = "LA24.png" style = "height:70px; margin-top:-25px"></a>
 			</div>
 			<ul class="nav navbar-nav">
 				  <li><a href="LA Hacks.html">Home</a></li>
@@ -69,9 +80,6 @@
 			</ul>
 		</div>
 	</nav>
-	<br>
-	<br>
-	<br>
 	<br>
 	<h1 style = "color:white">Predict the Winner</h1>
 	
@@ -105,13 +113,30 @@
 	<center>
 		<button class = "btn btn-submit" id="submitButton">Vote!</button>
 	<div id="dashboard">
+		<div class = "container-fluid">
+			<div class = "row">
+				<div class = "col-md-2">
+				</div>
+				<div class = "col-md-4">
+					<h2 id="bar">Votes from Each Country</h2>
+					<h2 id = "barwhenhover">Votes for That Country</h2>
+				</div>
+				<div class = "col-md-4">
+					<h2 id = "pie">Votes for Each Country</h2>
+					<h2 id = "piewhenhover">Votes from That Country</h2>
+				</div>
+				<div class = "col-md-2">
+				</div>
+			</div>
+		</div>
+		
 	</div>
 	</center>
 
 <script>
 function dashboard(id, fData){
     var barColor = 'steelblue';
-    function segColor(c){ return {USA:"#807dba", Russia:"#e08214",China:"#41ab5d", India:"#31ab5d"}[c]; }
+    function segColor(c){ return {USA:"#807dba", Russia:"#e08214",China:"#41ab5d", India:"#ff0000"}[c]; }
     
     // compute total for each Country.
     fData.forEach(function(d){d.total=d.freq.USA+d.freq.Russia+d.freq.China+d.freq.India;});
@@ -162,6 +187,8 @@ function dashboard(id, fData){
             .attr("text-anchor", "Russiadle");
         
         function mouseover(d){  // utility function to be called on mouseover.
+			$("#pie").hide();
+			$("#piewhenhover").show();
             // filter for selected Country.
             var st = fData.filter(function(s){ return s.Country == d[0];})[0],
                 nD = d3.keys(st.freq).map(function(s){ return {type:s, freq:st.freq[s]};});
@@ -172,6 +199,8 @@ function dashboard(id, fData){
         }
         
         function mouseout(d){    // utility function to be called on mouseout.
+			$("#piewhenhover").hide();
+			$("#pie").show();
             // reset the pie-chart and legend.    
             pC.update(tF);
             leg.update(tF);
@@ -229,11 +258,15 @@ function dashboard(id, fData){
         // Utility function to be called on mouseover a pie slice.
         function mouseover(d){
             // call the update function of histogram with new data.
+			$("#bar").hide();
+			$("#barwhenhover").show();
             hG.update(fData.map(function(v){ 
                 return [v.Country,v.freq[d.data.type]];}),segColor(d.data.type));
         }
         //Utility function to be called on mouseout a pie slice.
         function mouseout(d){
+			$("#barwhenhover").hide();
+			$("#bar").show();
             // call the update function of histogram with all data.
             hG.update(fData.map(function(v){
                 return [v.Country,v.total];}), barColor);
@@ -310,15 +343,9 @@ function dashboard(id, fData){
 <script>
 	var freqData=[
 	{Country:'USA',freq:{USA:4786, Russia:1319, China:249, India:100}}
-	,{Country:'China',freq:{USA:1101, Russia:412, China:674, India:100}}
 	,{Country:'Russia',freq:{USA:932, Russia:2149, China:418, India:100}}
-	,{Country:'Canada',freq:{USA:832, Russia:1152, China:1862, India:100}}
-	,{Country:'France',freq:{USA:4481, Russia:3304, China:948, India:100}}
-	,{Country:'Germany',freq:{USA:1619, Russia:167, China:1063, India:100}}
-	,{Country:'Mexico',freq:{USA:1819, Russia:247, China:1203, India:100}}
-	,{Country:'Spain',freq:{USA:4498, Russia:3852, China:942, India:100}}
+	,{Country:'China',freq:{USA:1101, Russia:412, China:674, India:100}}
 	,{Country:'India',freq:{USA:797, Russia:1849, China:1534, India:100}}
-	,{Country:'Japan',freq:{USA:162, Russia:379, China:471, India:100}}
 	];
 
 	dashboard('#dashboard',freqData);

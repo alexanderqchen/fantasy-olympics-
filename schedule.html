@@ -92,7 +92,7 @@
 	<nav class = "navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="LA Hacks.html">Los Angeles 2024</a>
+				<a class="navbar-brand" href="LA Hacks.html"><img src = "LA24.png" style = "height:70px; margin-top:-25px"></a>
 			</div>
 			<ul class="nav navbar-nav">
 				  <li><a href="LA Hacks.html">Home</a></li>
@@ -119,7 +119,7 @@
 		<div class = "col-md-2">
 		
 		</div>
-		<div class = "col-md-3">
+		<div class = "col-md-4">
 			<div class="form-group">
 			  <label for="sel1" style = "color:white">Enter an event:</label>
 			  <select class="form-control" id="sel1">
@@ -143,7 +143,23 @@
 			  <input class = "btn btn-xs" type = "submit" id = "test">
 			</div>
 		</div>
-		<div class = "col-md-7">
+		<div class = "col-md-4">
+			<div class="form-group">
+				<label style = "color:white">Choose a date:</label>
+				<div class='input-group date' id='datetimepicker1'>
+					<input type='text' class="form-control" />
+					<span class="input-group-addon">
+						<span class="glyphicon glyphicon-calendar"></span>
+					</span>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$(function () {
+					$('#datetimepicker1').data("DateTimePicker").datetimepicker();
+				});
+			</script>
+		</div>
+		<div class = "col-md-2">
 		</div>
 	</div>
 	
