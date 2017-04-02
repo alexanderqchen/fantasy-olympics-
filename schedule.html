@@ -10,18 +10,74 @@
 		//when more events are added, make sure to include them here
 		$(document).ready(function(){
 			var a;
-			$("#event1").hide();
-			$("#event2").hide();
+			$("#archery").hide();
+			$("#badminton").hide();
+			$("#baseball").hide();
+			$("#basketball").hide();
+			$("#boxing").hide();
+			$("#fencing").hide();
+			$("#golf").hide();
+			$("#gymnastics").hide();
+			$("#judo").hide();
+			$("#rowing").hide();
+			$("#tabletennis").hide();
+			$("#taekwondo").hide();
+			$("#tennis").hide();
+			$("#trackandfield").hide();
+			$("#volleyball").hide();
+			$("#weightlifting").hide();
 
 		
 			$("#test").click(function(){
-				$("#event1").hide();
-				$("#event2").hide();
+				$("#archery").hide();
+				$("#badminton").hide();
+				$("#baseball").hide();
+				$("#basketball").hide();
+				$("#boxing").hide();
+				$("#fencing").hide();
+				$("#golf").hide();
+				$("#gymnastics").hide();
+				$("#judo").hide();
+				$("#rowing").hide();
+				$("#tabletennis").hide();
+				$("#taekwondo").hide();
+				$("#tennis").hide();
+				$("#trackandfield").hide();
+				$("#volleyball").hide();
+				$("#weightlifting").hide();
 				a = $("#sel1").val();
-				if(a=="Gymnastics")
-					$("#event1").show();
+				if(a=="Archery")
+					$("#archery").show();
+				else if(a=="Badminton")
+					$("#badminton").show();
+				else if(a=="Baseball")
+					$("#baseball").show();
+				else if(a=="Basketball")
+					$("#basketball").show();
+				else if(a=="Boxing")
+					$("#boxing").show();
+				else if(a=="Fencing")
+					$("#fencing").show();
+				else if(a=="Golf")
+					$("#golf").show();
+				else if(a=="Gymnastics")
+					$("#gymnastics").show();
+				else if(a=="Judo")
+					$("#judo").show();
+				else if(a=="Rowing")
+					$("#rowing").show();
+				else if(a=="Table Tennis")
+					$("#tabletennis").show();
+				else if(a=="Taekwondo")
+					$("#taekwondo").show();
 				else if(a=="Tennis")
-					$("#event2").show();
+					$("#tennis").show();
+				else if(a=="Track and Field")
+					$("#trackandfield").show();
+				else if(a=="Volleyball")
+					$("#volleyball").show();
+				else if(a=="Weigtlifting")
+					$("#weightlifting").show();
 			});
 
 			
@@ -67,26 +123,27 @@
 		</div>
 		<div class = "col-md-3">
 			<div class="form-group">
-			  <label for="sel1" style = "color:white">Choose a sport:</label>
+			  <label for="sel1" style = "color:white">Enter an event:</label>
 			  <select class="form-control" id="sel1">
-				<option id = "gymnsatics">Gymnastics</option>
-				<option id = "tennis">Tennis</option>
-				<option id = "fencing">Fencing</option>
-				<option id = "basketball">Basketball</option>
-				<option id = "boxing">Boxing</option>
-				<option id = "baseball">Baseball</option>
-				<option id = "judo">Judo</option>
-				<option id = "volleyball">Volleyball</option>
-				<option id = "archery">Archery</option>
-				<option id = "golf">Golf</option>
-				<option id = "badminton">Badminton</option>
-				<option id = "taekwondo">Taekwondo</option>
-				<option id = "tabletennis">Table Tennis</option>
-				<option id = "rowing">Rowing</option>
-				<option id = "weightlifting">Weigtlifting</option>
-				<option id = "trackandfield">Track and Field</option>
+			  	<option>Archery</option>
+			  	<option>Badminton</option>
+			  	<option>Baseball</option>
+			  	<option>Basketball</option>
+			  	<option>Boxing</option>
+			  	<option>Fencing</option>
+			  	<option>Golf</option>
+				<option>Gymnastics</option>
+				<option>Judo</option>
+				<option>Rowing</option>
+				<option>Table Tennis</option>
+				<option>Taekwondo</option>
+				<option>Tennis</option>
+				<option>Track and Field</option>
+				<option>Volleyball</option>
+				<option>Weigtlifting</option>
+				
 			  </select>
-			  <input class = "btn" type = "submit" id = "test">
+			  <input class = "btn btn-xs" type = "submit" id = "test">
 			</div>
 		</div>
 		<div class = "col-md-7">
@@ -95,30 +152,486 @@
 	
 	
 	<!--so these are 2 sample events, make more for all the options-->
+	<div class = "row" id = "archery">
+		<div class = "col-md-2">
+		</div>
+		<div class = "col-md-8">
+			<h1 style = "color:white">Archery</h1>
+			<table class = "table" style = "background-color:white; border-radius:10px">
+				<thead>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+				</thead>
+				<tbody>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+				</tbody>
+				<tbody>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+				</tbody>
+			</table>
+		</div>
+		<div class = "col-md-2">
+		</div>
+	</div>
 	
-	<center>
-	<div class = "row" style = "padding-top:30px" id = "event1">
-		<div class = "col-md-12">
-			<h1 style = "color:white; padding-bottom:10px">Tuesday: August 15, 2024</h1>
-			<a href="vote.html"><h4>Rowing</h4></a>
-			<a href="#"><h4>Track and Field</h4></a>
-			<a href="#"><h4>Swimming</h4></a>
-			<a href="#"><h4>Soccer</h4></a>
-			<a href="#"><h4>Boxing</h4></a>
-			<a href="#"><p style = "color: white"><u>see more...</u></p></a>
+	<div class = "row" id = "badminton">
+		<div class = "col-md-2">
+		</div>
+		<div class = "col-md-8">
+			<h1 style = "color:white">Badminton</h1>
+			<table class = "table" style = "background-color:white; border-radius:10px">
+				<thead>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+				</thead>
+				<tbody>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+				</tbody>
+				<tbody>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+				</tbody>
+			</table>
+		</div>
+		<div class = "col-md-2">
 		</div>
 	</div>
-	<div class = "row" style = "padding-top:30px" id = "event2">
-		<div class = "col-md-12">
-			<h1 style = "color:white; padding-bottom:10px">Wednesday: August 16, 2024</h1>
-			<a href="#"><h4>Swimming</h4></a>
-			<a href="#"><h4>Judo</h4></a>
-			<a href="#"><h4>Table Tennis</h4></a>
-			<a href="#"><h4>Basketball</h4></a>
-			<a href="#"><p style = "color: white"><u>see more...</u></p></a>
+	
+	<div class = "row" id = "baseball">
+		<div class = "col-md-2">
+		</div>
+		<div class = "col-md-8">
+			<h1 style = "color:white">Baseball</h1>
+			<table class = "table" style = "background-color:white; border-radius:10px">
+				<thead>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+				</thead>
+				<tbody>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+				</tbody>
+				<tbody>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+				</tbody>
+			</table>
+		</div>
+		<div class = "col-md-2">
 		</div>
 	</div>
-	<center>
+	
+	<div class = "row" id = "basketball">
+		<div class = "col-md-2">
+		</div>
+		<div class = "col-md-8">
+			<h1 style = "color:white">Basketball</h1>
+			<table class = "table" style = "background-color:white; border-radius:10px">
+				<thead>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+				</thead>
+				<tbody>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+				</tbody>
+				<tbody>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+				</tbody>
+			</table>
+		</div>
+		<div class = "col-md-2">
+		</div>
+	</div>
+	
+	<div class = "row" id = "boxing">
+		<div class = "col-md-2">
+		</div>
+		<div class = "col-md-8">
+			<h1 style = "color:white">Boxing</h1>
+			<table class = "table" style = "background-color:white; border-radius:10px">
+				<thead>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+				</thead>
+				<tbody>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+				</tbody>
+				<tbody>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+				</tbody>
+			</table>
+		</div>
+		<div class = "col-md-2">
+		</div>
+	</div>
+	
+	<div class = "row" id = "fencing">
+		<div class = "col-md-2">
+		</div>
+		<div class = "col-md-8">
+			<h1 style = "color:white">Fencing</h1>
+			<table class = "table" style = "background-color:white; border-radius:10px">
+				<thead>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+				</thead>
+				<tbody>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+				</tbody>
+				<tbody>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+				</tbody>
+			</table>
+		</div>
+		<div class = "col-md-2">
+		</div>
+	</div>
+	
+	<div class = "row" id = "golf">
+		<div class = "col-md-2">
+		</div>
+		<div class = "col-md-8">
+			<h1 style = "color:white">Golf</h1>
+			<table class = "table" style = "background-color:white; border-radius:10px">
+				<thead>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+				</thead>
+				<tbody>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+				</tbody>
+				<tbody>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+				</tbody>
+			</table>
+		</div>
+		<div class = "col-md-2">
+		</div>
+	</div>
+	
+	<div class = "row" id = "gymnastics">
+		<div class = "col-md-2">
+		</div>
+		<div class = "col-md-8">
+			<h1 style = "color:white">Gymnastics</h1>
+			<table class = "table" style = "background-color:white; border-radius:10px">
+				<thead>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+				</thead>
+				<tbody>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+				</tbody>
+				<tbody>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+				</tbody>
+			</table>
+		</div>
+		<div class = "col-md-2">
+		</div>
+	</div>
+	
+	<div class = "row" id = "judo">
+		<div class = "col-md-2">
+		</div>
+		<div class = "col-md-8">
+			<h1 style = "color:white">Judo</h1>
+			<table class = "table" style = "background-color:white; border-radius:10px">
+				<thead>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+				</thead>
+				<tbody>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+				</tbody>
+				<tbody>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+				</tbody>
+			</table>
+		</div>
+		<div class = "col-md-2">
+		</div>
+	</div>
+	
+	<div class = "row" id = "rowing">
+		<div class = "col-md-2">
+		</div>
+		<div class = "col-md-8">
+			<h1 style = "color:white">Rowing</h1>
+			<table class = "table" style = "background-color:white; border-radius:10px">
+				<thead>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+				</thead>
+				<tbody>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+				</tbody>
+				<tbody>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+				</tbody>
+			</table>
+		</div>
+		<div class = "col-md-2">
+		</div>
+	</div>
+	
+	<div class = "row" id = "tabletennis">
+		<div class = "col-md-2">
+		</div>
+		<div class = "col-md-8">
+			<h1 style = "color:white">Table Tennis</h1>
+			<table class = "table" style = "background-color:white; border-radius:10px">
+				<thead>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+				</thead>
+				<tbody>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+				</tbody>
+				<tbody>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+				</tbody>
+			</table>
+		</div>
+		<div class = "col-md-2">
+		</div>
+	</div>
+	
+	<div class = "row" id = "taekwondo">
+		<div class = "col-md-2">
+		</div>
+		<div class = "col-md-8">
+			<h1 style = "color:white">Taekwondo</h1>
+			<table class = "table" style = "background-color:white; border-radius:10px">
+				<thead>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+				</thead>
+				<tbody>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+				</tbody>
+				<tbody>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+				</tbody>
+			</table>
+		</div>
+		<div class = "col-md-2">
+		</div>
+	</div>
+	
+	<div class = "row" id = "tennis">
+		<div class = "col-md-2">
+		</div>
+		<div class = "col-md-8">
+			<h1 style = "color:white">Tennis</h1>
+			<table class = "table" style = "background-color:white; border-radius:10px">
+				<thead>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+				</thead>
+				<tbody>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+				</tbody>
+				<tbody>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+				</tbody>
+			</table>
+		</div>
+		<div class = "col-md-2">
+		</div>
+	</div>
+	
+	<div class = "row" id = "trackandfield">
+		<div class = "col-md-2">
+		</div>
+		<div class = "col-md-8">
+			<h1 style = "color:white">Track and Field</h1>
+			<table class = "table" style = "background-color:white; border-radius:10px">
+				<thead>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+				</thead>
+				<tbody>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+				</tbody>
+				<tbody>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+				</tbody>
+			</table>
+		</div>
+		<div class = "col-md-2">
+		</div>
+	</div>
+	
+	<div class = "row" id = "volleyball">
+		<div class = "col-md-2">
+		</div>
+		<div class = "col-md-8">
+			<h1 style = "color:white">Volleyball</h1>
+			<table class = "table" style = "background-color:white; border-radius:10px">
+				<thead>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+				</thead>
+				<tbody>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+				</tbody>
+				<tbody>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+				</tbody>
+			</table>
+		</div>
+		<div class = "col-md-2">
+		</div>
+	</div>
+	
+	<div class = "row" id = "weightlifting">
+		<div class = "col-md-2">
+		</div>
+		<div class = "col-md-8">
+			<h1 style = "color:white">Weigtlifting</h1>
+			<table class = "table" style = "background-color:white; border-radius:10px">
+				<thead>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+					<th>Test</th>
+				</thead>
+				<tbody>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+					<td>Hello</td>
+				</tbody>
+				<tbody>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+					<td>World</td>
+				</tbody>
+			</table>
+		</div>
+		<div class = "col-md-2">
+		</div>
+	</div>
+	
 </body>
 
 
