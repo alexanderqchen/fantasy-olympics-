@@ -19,14 +19,3 @@ h4 {
 	color: #A00606;
 	font-size: 25px;
 }
-
-tr { 
-  vertical-align: top;
-}
-th td {
-	padding-left:50px;
-	padding-right:50px;
-}
-.post { 
-  width: 500px; 
-}
