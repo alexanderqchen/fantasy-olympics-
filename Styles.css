@@ -1,13 +1,21 @@
 h1 {
 	text-align: center;
+	color:white;
+	font-family: 'Bevan', cursive;
+	font-size: 50px;
 }
+
+h2 {
+	text-align: center;
+}
+
+
 html, body {
-    background: linear-gradient(black, white); /* Standard syntax */
+    background: linear-gradient(black, white);
 	margin: 0;
 	padding:0;
 	height: 100%;
 }
-
 
 
 video {
@@ -36,4 +44,3 @@ th {
 	font-size:20px;
 }
 
-thead {}
