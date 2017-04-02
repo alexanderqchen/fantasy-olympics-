@@ -46,6 +46,13 @@
 		</form>
 		<svg width="960" height="500"></svg>
 	</center>
+	<br>
+	<br>
+	<br>
+	<center>
+		<h1>Where We Have Been</h1>
+		<div id="map" style="width:1000px;height:700px"></div>
+	</center>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 
@@ -209,6 +216,201 @@ function transitionStacked() {
 
 
 </script>
+	
+	<script>
+		function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var myCenter = new google.maps.LatLng(41.661203, 0); 
+  var mapOptions = {center: myCenter, zoom: 2};
+  var map = new google.maps.Map(mapCanvas,mapOptions);
+  
+  
+  var marker1 = new google.maps.Marker({
+    position: new google.maps.LatLng(37.988126, 23.728897),
+    animation: google.maps.Animation.BOUNCE
+  });
+  
+  var marker2 = new google.maps.Marker({
+    position: new google.maps.LatLng(48.854998, 2.341032),
+    animation: google.maps.Animation.BOUNCE
+  });
+  
+  var marker3 = new google.maps.Marker({
+    position: new google.maps.LatLng(38.620836, -90.238665),
+    animation: google.maps.Animation.BOUNCE
+  });
+  
+  var marker4 = new google.maps.Marker({
+    position: new google.maps.LatLng(37.988126, 23.728897),
+    animation: google.maps.Animation.BOUNCE
+  });
+  
+  var marker5 = new google.maps.Marker({
+    position: new google.maps.LatLng(51.493266, -0.120875),
+    animation: google.maps.Animation.BOUNCE
+  });
+  //stockholm sweden
+  var marker6 = new google.maps.Marker({
+    position: new google.maps.LatLng(59.323965, 18.065130),
+    animation: google.maps.Animation.BOUNCE
+  });
+  
+  var marker7 = new google.maps.Marker({
+    position: new google.maps.LatLng(51.213871, 4.402799),
+    animation: google.maps.Animation.BOUNCE
+  });
+  
+  var marker8 = new google.maps.Marker({
+    position: new google.maps.LatLng(48.854998, 2.341032),
+    animation: google.maps.Animation.BOUNCE
+  });
+  
+  var marker9 = new google.maps.Marker({
+    position: new google.maps.LatLng(52.363629, 4.888993),
+    animation: google.maps.Animation.BOUNCE
+  });
+  //los angeles
+  var marker10 = new google.maps.Marker({
+    position: new google.maps.LatLng(34.038391, -118.257966),
+    animation: google.maps.Animation.BOUNCE
+  });
+  
+  var marker11 = new google.maps.Marker({
+    position: new google.maps.LatLng(52.509719, 13.409636),
+    animation: google.maps.Animation.BOUNCE
+  });
+  
+  var marker12 = new google.maps.Marker({
+    position: new google.maps.LatLng(51.493266, -0.120875),
+    animation: google.maps.Animation.BOUNCE
+  });
+  //helsinki
+  var marker13 = new google.maps.Marker({
+    position: new google.maps.LatLng(60.162342, 24.934500),
+    animation: google.maps.Animation.BOUNCE
+  });
+  //melbourne
+  var marker14 = new google.maps.Marker({
+    position: new google.maps.LatLng(-37.835788, 144.967145),
+    animation: google.maps.Animation.BOUNCE
+  });
+  //stockholm
+  var marker15 = new google.maps.Marker({
+    position: new google.maps.LatLng(59.323965, 18.065130),
+    animation: google.maps.Animation.BOUNCE
+  });
+  //Rome
+  var marker16 = new google.maps.Marker({
+    position: new google.maps.LatLng(41.896699, 12.494103),
+    animation: google.maps.Animation.BOUNCE
+  });
+  //Tokyo
+  var marker17 = new google.maps.Marker({
+    position: new google.maps.LatLng(35.706723, 139.737843),
+    animation: google.maps.Animation.BOUNCE
+  });
+  //Mexico City
+  var marker18 = new google.maps.Marker({
+    position: new google.maps.LatLng(19.422414, -99.141565),
+    animation: google.maps.Animation.BOUNCE
+  });
+  //Munchen
+  var marker19 = new google.maps.Marker({
+    position: new google.maps.LatLng(48.125017, 11.582879),
+    animation: google.maps.Animation.BOUNCE
+  });
+  //Montreal
+  var marker20 = new google.maps.Marker({
+    position: new google.maps.LatLng(48.125017, 11.582879),
+    animation: google.maps.Animation.BOUNCE
+  });
+  //Moscow
+  var marker21 = new google.maps.Marker({
+    position: new google.maps.LatLng(55.741926, 37.619421),
+    animation: google.maps.Animation.BOUNCE
+  });
+  //Los Angeles
+  var marker22 = new google.maps.Marker({
+    position: new google.maps.LatLng(34.038391, -118.257966),
+    animation: google.maps.Animation.BOUNCE
+  });
+  //Seoul
+  var marker23 = new google.maps.Marker({
+    position: new google.maps.LatLng(37.541065, 126.985420),
+    animation: google.maps.Animation.BOUNCE
+  });
+  //Barcelona
+  var marker24 = new google.maps.Marker({
+    position: new google.maps.LatLng(41.388330, 2.173141),
+    animation: google.maps.Animation.BOUNCE
+  });
+  //Atlanta
+  var marker25 = new google.maps.Marker({
+    position: new google.maps.LatLng(33.756788, -84.391775),
+    animation: google.maps.Animation.BOUNCE
+  });
+  //Sydney
+  var marker26 = new google.maps.Marker({
+    position: new google.maps.LatLng(-33.869124, 151.209039),
+    animation: google.maps.Animation.BOUNCE
+  });
+  //Athens
+  var marker27 = new google.maps.Marker({
+    position: new google.maps.LatLng(37.988126, 23.728897),
+    animation: google.maps.Animation.BOUNCE
+  });
+  //Beijing
+  var marker28 = new google.maps.Marker({
+    position: new google.maps.LatLng(39.880610, 116.411153),
+    animation: google.maps.Animation.BOUNCE
+  });
+  //London
+  var marker29 = new google.maps.Marker({
+    position: new google.maps.LatLng(51.493266, -0.120875),
+    animation: google.maps.Animation.BOUNCE
+  });
+  //Rio
+  var marker30 = new google.maps.Marker({
+    position: new google.maps.LatLng(-22.912336, -43.173382),
+    animation: google.maps.Animation.BOUNCE
+  });
+  
+  marker1.setMap(map);
+  marker2.setMap(map);
+  marker3.setMap(map);
+  marker4.setMap(map);
+  marker5.setMap(map);
+  marker6.setMap(map);
+  marker7.setMap(map);
+  marker8.setMap(map);
+  marker9.setMap(map);
+  marker10.setMap(map);
+  marker11.setMap(map);
+  marker12.setMap(map);
+  marker13.setMap(map);
+  marker14.setMap(map);
+  marker15.setMap(map);
+  marker16.setMap(map);
+  marker17.setMap(map);
+  marker18.setMap(map);
+  marker19.setMap(map);
+  marker20.setMap(map);
+  marker21.setMap(map);
+  marker22.setMap(map);
+  marker23.setMap(map);
+  marker24.setMap(map);
+  marker25.setMap(map);
+  marker26.setMap(map);
+  marker27.setMap(map);
+  marker28.setMap(map);
+  marker29.setMap(map);
+  marker30.setMap(map);
+}
+		
+		
+		
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 	
 </body>
 </html>
