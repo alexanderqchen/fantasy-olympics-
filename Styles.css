@@ -11,7 +11,22 @@ html, body {
 	width: 50%;
 }
 
+h4 {
+	color:red;
+}
+
 .element {
 	color: #A00606;
 	font-size: 25px;
+}
+
+tr { 
+  vertical-align: top;
+}
+th td {
+	padding-left:50px;
+	padding-right:50px;
+}
+.post { 
+  width: 500px; 
 }
